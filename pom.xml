@@ -41,6 +41,13 @@
                 <version>2.11</version>
                 <configuration>
                     <skip>true</skip>
+		    <rules>
+            <bannedDependencies>
+              <excludes>
+                <exclude>org.slf4j:slf4j-api</exclude>
+              </excludes>
+            </bannedDependencies>
+          </rules>
                 </configuration>
                 <executions>
                     <execution>
