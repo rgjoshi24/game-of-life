@@ -20,16 +20,6 @@
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
-	    <exclusions>
-       		<exclusion> 
-          	<groupId>org.slf4j</groupId>
-          	<artifactId>slf4j-log4j12</artifactId>
-       		</exclusion>
-       		<exclusion> 
-          	<groupId>log4j</groupId>
-          	<artifactId>log4j</artifactId>
-      		</exclusion>
-    	  </exclusions>
 
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
@@ -189,69 +179,35 @@
 	</dependencies>
     </dependencyManagement>
     <dependencies>
+	<dependency>
+   		<groupId>org.slf4j</groupId>
+   		<artifactId>slf4j-api</artifactId>
+	        <version>[1.4.2,)</version>
+                <scope>provided</scope>
+	</dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
-	    <exclusions>
-       		<exclusion> 
-          	<groupId>org.slf4j</groupId>
-          	<artifactId>slf4j-log4j12</artifactId>
-       		</exclusion>
-       		<exclusion> 
-          	<groupId>log4j</groupId>
-          	<artifactId>log4j</artifactId>
-      		</exclusion>
-    	  </exclusions>
         </dependency>
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
             <version>1.1</version>
             <scope>test</scope>
-	    <exclusions>
-       		<exclusion> 
-          	<groupId>org.slf4j</groupId>
-          	<artifactId>slf4j-log4j12</artifactId>
-       		</exclusion>
-       		<exclusion> 
-          	<groupId>log4j</groupId>
-          	<artifactId>log4j</artifactId>
-      		</exclusion>
-    	  </exclusions>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
             <version>1.9.0</version>
             <scope>test</scope>
-	    <exclusions>
-       		<exclusion> 
-          	<groupId>org.slf4j</groupId>
-          	<artifactId>slf4j-log4j12</artifactId>
-       		</exclusion>
-       		<exclusion> 
-          	<groupId>log4j</groupId>
-          	<artifactId>log4j</artifactId>
-      		</exclusion>
-    	  </exclusions>
         </dependency>
          <dependency>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-webdav-jackrabbit</artifactId>
                 <version>2.2</version>
             <scope>test</scope>
-	    <exclusions>
-       		<exclusion> 
-          	<groupId>org.slf4j</groupId>
-          	<artifactId>slf4j-log4j12</artifactId>
-       		</exclusion>
-       		<exclusion> 
-          	<groupId>log4j</groupId>
-          	<artifactId>log4j</artifactId>
-      		</exclusion>
-    	  </exclusions>
         </dependency>
     </dependencies>
 
