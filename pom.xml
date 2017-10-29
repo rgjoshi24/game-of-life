@@ -258,6 +258,13 @@
                             <!--<ignoreIdentifiers>true</ignoreIdentifiers>-->
                             <failOnViolation>true</failOnViolation>
                             <failurePriority>2</failurePriority>
+			    <rules>
+            <bannedDependencies>
+              <excludes>
+                <exclude>org.slf4j:slf4j-api</exclude>
+              </excludes>
+            </bannedDependencies>
+          </rules>
                         </configuration>
                     </plugin>
 
