@@ -186,9 +186,6 @@
       		</exclusion>
     	  </exclusions>
             </dependency>
-        </dependencies>
-    </dependencyManagement>
-    <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -255,6 +252,7 @@
         </dependency>
 
     </dependencies>
+    </dependencymanagement>
 
     <modules>
         <module>gameoflife-build</module>
