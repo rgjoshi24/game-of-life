@@ -20,6 +20,16 @@
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
+	    <exclusions>
+       		<exclusion> 
+          	<groupId>org.slf4j</groupId>
+          	<artifactId>slf4j-log4j12</artifactId>
+       		</exclusion>
+       		<exclusion> 
+          	<groupId>log4j</groupId>
+          	<artifactId>log4j</artifactId>
+      		</exclusion>
+    	  </exclusions>
 
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
@@ -175,16 +185,6 @@
                 <artifactId>easyb-core</artifactId>
                 <version>${easyb.version}</version>
                 <scope>test</scope>
-	    <exclusions>
-       		<exclusion> 
-          	<groupId>org.slf4j</groupId>
-          	<artifactId>slf4j-log4j12</artifactId>
-       		</exclusion>
-       		<exclusion> 
-          	<groupId>log4j</groupId>
-          	<artifactId>log4j</artifactId>
-      		</exclusion>
-    	  </exclusions>
             </dependency>
 	</dependencies>
     </dependencyManagement>
