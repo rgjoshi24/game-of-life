@@ -252,7 +252,7 @@
         </dependency>
 
     </dependencies>
-    </dependencymanagement>
+    </dependencyManagement>
 
     <modules>
         <module>gameoflife-build</module>
