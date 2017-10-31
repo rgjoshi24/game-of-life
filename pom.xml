@@ -22,6 +22,11 @@
     </properties>
 
     <distributionManagement>
+    <repository>
+      <id>maven-repo</id>
+      <name>maven-repo</name>
+      <url>http://localhost:8081/repository/maven-repo/</url>
+    </repository>
     <snapshotRepository>
       <id>maven-repo</id>
       <url>http://localhost:8081/repository/maven-repo/</url>
