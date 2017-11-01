@@ -21,7 +21,6 @@ import com.wakaleo.gameoflife.domain.Universe;
 @Controller
 @RequestMapping("/game")
 public class GameController {
-	private String lastname;
 	// For generating random thread sleep times
     private Random randomGenerator = new Random();
 

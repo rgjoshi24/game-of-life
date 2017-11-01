@@ -13,8 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class HomePageController {
-
-	private String name;
     @RequestMapping("/")
     public ModelAndView index() {
         return new ModelAndView("home");
